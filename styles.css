@@ -70,3 +70,13 @@ button, .botao-secundario, .botao-whatsapp {
     background-color: #25D366;
     color: white;
 }
+
+body {
+  background-color: #1560BD !important;
+}
+
+.logo {
+  width: 200px !important;
+  background-color: #1560BD !important;
+  padding: 10px;
+}
