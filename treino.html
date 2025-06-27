@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treino de Hoje</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Logo" class="logo">
+    </header>
+
+    <main>
+        <section class="treino-dia">
+            <h1>Treino de <span id="diaSemana"></span></h1>
+            <p id="treinoConteudo">Carregando treino...</p>
+            <a href="todos-treinos.html" class="botao-secundario">Ver todos os treinos</a>
+            <a href="https://wa.me/55SEUNUMEROAQUI" class="botao-whatsapp" target="_blank">Falar com o Personal</a>
+        </section>
+    </main>
+
+    <script>
+        const dias = ["domingo", "segunda-feira", "terça-feira", "quarta-feira", "quinta-feira", "sexta-feira", "sábado"];
+        const hoje = new Date();
+        const dia = dias[hoje.getDay()];
+        document.getElementById("diaSemana").textContent = dia.charAt(0).toUpperCase() + dia.slice(1);
+
+        const treinos = {
+            "segunda-feira": "Peito e Tríceps",
+            "terça-feira": "Costas e Bíceps",
+            "quarta-feira": "Pernas e Abdômen",
+            "quinta-feira": "Ombros e Core",
+            "sexta-feira": "Treino funcional",
+            "sábado": "Treino livre / descanso ativo",
+            "domingo": "Descanso"
+        };
+
+        document.getElementById("treinoConteudo").textContent = treinos[dia];
+    </script>
+</body>
+</html>
