@@ -1,68 +1,97 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Treinos da Semana - Goulart Personal</title>
-    <style>
-        body {
-            background-color: #1560BD;
-            color: white;
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 20px;
-        }
-        header {
-            text-align: center;
-        }
-        header img {
-            width: 260px;
-            margin-bottom: 10px;
-        }
-        h1 {
-            color: #00FF7F;
-        }
-        .dias {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 20px;
-            margin-top: 30px;
-        }
-        .card {
-            background-color: rgba(255,255,255,0.1);
-            padding: 20px;
-            border-radius: 10px;
-            text-align: center;
-        }
-        .card button {
-            background-color: #00FF7F;
-            border: none;
-            border-radius: 6px;
-            padding: 10px;
-            font-weight: bold;
-            cursor: pointer;
-            margin-top: 10px;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dashboard - Goulart Personal</title>
+  <style>
+    body {
+      background-color: #1560BD;
+      color: white;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+    header {
+      text-align: center;
+    }
+    header img {
+      width: 160px;
+      margin-bottom: 10px;
+    }
+    h1, h2 {
+      color: #00FF7F;
+      text-align: center;
+    }
+    .treino-dia {
+      background-color: rgba(255,255,255,0.1);
+      padding: 20px;
+      border-radius: 10px;
+      margin: 20px auto;
+      max-width: 500px;
+      text-align: left;
+    }
+    .link-todos {
+      text-align: center;
+      margin-top: 30px;
+      font-size: 1.2em;
+      font-weight: bold;
+    }
+    .dias {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+    .card {
+      background-color: rgba(255,255,255,0.1);
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+    }
+    .card button {
+      background-color: #00FF7F;
+      border: none;
+      border-radius: 6px;
+      padding: 10px;
+      font-weight: bold;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <img src="logo.png" alt="Logo Goulart Personal" />
-        <h1>Treino de <span id="diaAtual"></span></h1>
-    </header>
-    <section class="dias">
-        <div class="card"><h3>Segunda-feira</h3><button onclick="alert('Treino de Segunda')">Ver treino</button></div>
-        <div class="card"><h3>Terça-feira</h3><button onclick="alert('Treino de Terça')">Ver treino</button></div>
-        <div class="card"><h3>Quarta-feira</h3><button onclick="alert('Treino de Quarta')">Ver treino</button></div>
-        <div class="card"><h3>Quinta-feira</h3><button onclick="alert('Treino de Quinta')">Ver treino</button></div>
-        <div class="card"><h3>Sexta-feira</h3><button onclick="alert('Treino de Sexta')">Ver treino</button></div>
-        <div class="card"><h3>Sábado</h3><button onclick="alert('Treino de Sábado')">Ver treino</button></div>
-        <div class="card"><h3>Domingo</h3><button onclick="alert('Treino de Domingo')">Ver treino</button></div>
-    </section>
-    <script>
-        const dias = ['Domingo','Segunda-feira','Terça-feira','Quarta-feira','Quinta-feira','Sexta-feira','Sábado'];
-        const hoje = new Date().getDay();
-        document.getElementById('diaAtual').innerText = dias[hoje];
-    </script>
+  <header>
+    <img src="logo.png" alt="Logo Goulart Personal" />
+    <h1>Bem-vindo(a)!</h1>
+  </header>
+
+  <section class="treino-dia">
+    <h2>Treino de <span id="diaAtual"></span></h2>
+    <ul>
+      <li>Agachamento Livre – 3x12</li>
+      <li>Leg Press – 3x10</li>
+      <li>Cadeira Extensora – 3x15</li>
+      <li>Stiff – 3x12</li>
+    </ul>
+  </section>
+
+  <div class="link-todos">Ver todos os treinos ↓</div>
+
+  <section class="dias">
+    <div class="card"><h3>Segunda-feira</h3><button onclick="alert('Treino de Segunda')">Ver treino</button></div>
+    <div class="card"><h3>Terça-feira</h3><button onclick="alert('Treino de Terça')">Ver treino</button></div>
+    <div class="card"><h3>Quarta-feira</h3><button onclick="alert('Treino de Quarta')">Ver treino</button></div>
+    <div class="card"><h3>Quinta-feira</h3><button onclick="alert('Treino de Quinta')">Ver treino</button></div>
+    <div class="card"><h3>Sexta-feira</h3><button onclick="alert('Treino de Sexta')">Ver treino</button></div>
+    <div class="card"><h3>Sábado</h3><button onclick="alert('Treino de Sábado')">Ver treino</button></div>
+    <div class="card"><h3>Domingo</h3><button onclick="alert('Treino de Domingo')">Ver treino</button></div>
+  </section>
+
+  <script>
+    const dias = ['Domingo','Segunda-feira','Terça-feira','Quarta-feira','Quinta-feira','Sexta-feira','Sábado'];
+    const hoje = new Date().getDay();
+    document.getElementById('diaAtual').innerText = dias[hoje];
+  </script>
 </body>
 </html>
