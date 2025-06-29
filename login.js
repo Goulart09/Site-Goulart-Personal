@@ -1,1 +1,1 @@
-function login() { console.log('Função de login chamada'); }
+function login(){ alert('Login simulado. Redirecionando...'); window.location.href='dashboard.html'; }

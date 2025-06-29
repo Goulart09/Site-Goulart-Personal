@@ -1,0 +1,1 @@
+const params = new URLSearchParams(window.location.search); document.getElementById('diaSelecionado').innerText = params.get('dia'); document.getElementById('conteudoTreino').innerText = 'Conteúdo do treino de ' + params.get('dia');

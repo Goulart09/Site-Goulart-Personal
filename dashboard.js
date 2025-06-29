@@ -1,0 +1,1 @@
+function verTodosTreinos() { alert('Mostrando todos os treinos.'); } function verTreino(dia) { window.location.href = 'treino.html?dia=' + dia; }

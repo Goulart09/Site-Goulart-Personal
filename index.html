@@ -9,8 +9,14 @@
 </head>
 <body>
   <header><img src="images/logo.png" alt="Logo Goulart Personal" class="logo" /></header>
-  <main><h1>Bem-vindo ao Goulart Personal</h1></main>
-  <script src="main.js"></script>
+  <main>
+    <div class="login-box">
+      <h2>Área do Aluno</h2>
+      <input type="email" placeholder="Email" id="email" />
+      <input type="password" placeholder="Senha" id="password" />
+      <button onclick="login()">Entrar</button>
+    </div>
+  </main>
   <script src="firebase-config.js"></script>
   <script src="login.js"></script>
 </body>
