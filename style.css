@@ -1,65 +1,30 @@
-
 body {
   background-color: #1560BD;
   color: white;
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .logo {
-  width: 200px;
-  margin: 20px auto;
-  display: block;
+  height: 80px;
+  margin: 20px;
 }
-.logo.small {
-  width: 150px;
+#login-section {
+  background-color: #104e8b;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
-.login-box {
-  background-color: #104e94;
-  padding: 20px;
-  margin: 50px auto;
-  border-radius: 8px;
-  width: 300px;
+form {
+  display: flex;
+  flex-direction: column;
 }
-.login-box input {
-  width: 90%;
+input, button {
   margin: 10px 0;
   padding: 10px;
+  border-radius: 5px;
   border: none;
-  border-radius: 5px;
-}
-.login-box button {
-  background-color: #00ff7f;
-  color: black;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-}
-.card {
-  background-color: #104e94;
-  margin: 20px auto;
-  padding: 20px;
-  border-radius: 10px;
-  width: 80%;
-}
-.semana {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-.dia {
-  background: #104e94;
-  margin: 10px;
-  padding: 10px;
-  border-radius: 5px;
-  width: 120px;
-}
-.dia button {
-  background-color: #00ff7f;
-  color: black;
-  padding: 5px 10px;
-  margin-top: 5px;
-  border: none;
-  border-radius: 5px;
 }
