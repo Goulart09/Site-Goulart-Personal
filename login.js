@@ -1,0 +1,1 @@
+function login() { console.log('Função de login chamada'); }
