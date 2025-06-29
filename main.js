@@ -1,1 +1,1 @@
-console.log('Main JS carregado');
+// Script principal do site
