@@ -1,21 +1,30 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Login - Goulart Personal</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <title>Login - Goulart Personal</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-  <div class="login-container">
-    <img src="logo.png" alt="Logo Goulart Personal" class="logo" />
-    <form id="loginForm">
-      <input type="email" id="email" placeholder="Email" required />
-      <input type="password" id="password" placeholder="Senha" required />
-      <button type="submit">Entrar</button>
-      <p id="error-msg" class="error"></p>
-    </form>
-  </div>
-  <script src="main.js"></script>
+<body class="login-body">
+    <div class="login-container">
+        <img src="logo.png" alt="Logo" class="logo">
+        <h2>Área do Aluno</h2>
+        <input type="email" id="email" placeholder="Email">
+        <input type="password" id="password" placeholder="Senha">
+        <button onclick="login()">Entrar</button>
+        <p id="login-message"></p>
+    </div>
+    <script>
+        function login() {
+            const email = document.getElementById("email").value;
+            const password = document.getElementById("password").value;
+            if (email === "caiovictorarantes@gmail.com" && password === "Caio") {
+                window.location.href = "dashboard.html";
+            } else {
+                document.getElementById("login-message").textContent = "Senha incorreta";
+            }
+        }
+    </script>
 </body>
 </html>

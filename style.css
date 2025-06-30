@@ -1,59 +1,82 @@
+
 body {
-  font-family: sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #1560BD;
-  color: white;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1560BD;
+    color: white;
 }
-.logo, .logo-small {
-  display: block;
-  margin: 20px auto;
-  max-width: 200px;
+
+.logo {
+    width: 120px;
+    margin: 20px auto;
+    display: block;
 }
-.logo-small { max-width: 120px; }
+
+.login-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
 .login-container {
-  width: 300px;
-  margin: 100px auto;
-  background: white;
-  color: black;
-  padding: 20px;
-  border-radius: 10px;
-  text-align: center;
+    background: white;
+    color: #333;
+    padding: 20px;
+    border-radius: 12px;
+    width: 300px;
+    text-align: center;
 }
-input { display: block; margin: 10px auto; padding: 10px; width: 90%; }
-button { padding: 10px 20px; cursor: pointer; }
-.dashboard, .semana { padding: 20px; text-align: center; }
+
+.login-container input {
+    display: block;
+    width: 90%;
+    padding: 10px;
+    margin: 10px auto;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+.login-container button {
+    padding: 10px 20px;
+    background-color: #1560BD;
+    color: white;
+    border: none;
+    border-radius: 6px;
+}
+
 .card {
-  background: white;
-  color: black;
-  margin: 10px auto;
-  padding: 10px;
-  border-radius: 8px;
-  width: 90%;
-  max-width: 400px;
+    background-color: white;
+    color: #333;
+    padding: 15px;
+    border-radius: 12px;
+    margin: 10px auto;
+    width: 90%;
+    max-width: 600px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
-.observacoes { font-size: 14px; }
-.btn {
-  display: inline-block;
-  margin-top: 15px;
-  padding: 10px 15px;
-  background: #fff;
-  color: #1560BD;
-  text-decoration: none;
-  border-radius: 5px;
+
+.card h3 {
+    margin-top: 0;
 }
-.dias {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 10px;
+
+.dashboard {
+    padding: 20px;
+    text-align: center;
 }
-.dia {
-  background: white;
-  color: black;
-  border-radius: 8px;
-  padding: 10px;
-  width: 130px;
-  text-align: center;
+
+.treino-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
 }
-.error { color: red; margin-top: 10px; }
+
+.treino-card {
+    width: 200px;
+    background-color: white;
+    color: #333;
+    border-radius: 12px;
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
