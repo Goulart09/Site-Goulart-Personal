@@ -1,11 +1,12 @@
-
-function login() {
+document.getElementById('loginForm').addEventListener('submit', function(e) {
+  e.preventDefault();
   const email = document.getElementById('email').value;
   const password = document.getElementById('password').value;
-  const error = document.getElementById('error');
-  if (password === 'treino123') {
+  const errorMsg = document.getElementById('error-msg');
+
+  if (email === 'caiovictorarantes@gmail.com' && password === 'Caio') {
     window.location.href = 'dashboard.html';
   } else {
-    error.textContent = 'Senha incorreta. Use: treino123';
+    errorMsg.textContent = 'Senha incorreta';
   }
-}
+});

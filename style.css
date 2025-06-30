@@ -1,72 +1,59 @@
-
 body {
+  font-family: sans-serif;
   margin: 0;
-  font-family: Arial, sans-serif;
+  padding: 0;
   background-color: #1560BD;
   color: white;
+}
+.logo, .logo-small {
+  display: block;
+  margin: 20px auto;
+  max-width: 200px;
+}
+.logo-small { max-width: 120px; }
+.login-container {
+  width: 300px;
+  margin: 100px auto;
+  background: white;
+  color: black;
+  padding: 20px;
+  border-radius: 10px;
   text-align: center;
 }
-
-.login-container {
-  margin-top: 100px;
-}
-
-.logo {
-  width: 150px;
-  margin-bottom: 20px;
-}
-
-input {
-  display: block;
+input { display: block; margin: 10px auto; padding: 10px; width: 90%; }
+button { padding: 10px 20px; cursor: pointer; }
+.dashboard, .semana { padding: 20px; text-align: center; }
+.card {
+  background: white;
+  color: black;
   margin: 10px auto;
   padding: 10px;
-  width: 250px;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 400px;
 }
-
-button {
-  padding: 10px 20px;
-  background-color: limegreen;
-  color: white;
-  border: none;
-  cursor: pointer;
-}
-
-.error-message {
-  color: red;
-}
-
-.card {
-  background-color: #ffffff20;
-  margin: 20px auto;
-  padding: 20px;
-  width: 60%;
-  border-radius: 10px;
-}
-
-.button, .small-btn {
+.observacoes { font-size: 14px; }
+.btn {
   display: inline-block;
-  margin-top: 20px;
+  margin-top: 15px;
   padding: 10px 15px;
-  background-color: greenyellow;
-  color: black;
+  background: #fff;
+  color: #1560BD;
   text-decoration: none;
+  border-radius: 5px;
 }
-
-.week-grid {
+.dias {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 10px;
 }
-
-.day-card {
-  background-color: #ffffff20;
-  padding: 15px;
-  width: 120px;
+.dia {
+  background: white;
+  color: black;
   border-radius: 8px;
+  padding: 10px;
+  width: 130px;
+  text-align: center;
 }
-
-.small-logo {
-  width: 100px;
-  margin-top: 20px;
-}
+.error { color: red; margin-top: 10px; }

@@ -1,25 +1,34 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Painel do Aluno</title>
+  <title>Dashboard - Goulart Personal</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="header">
-    <img src="logo.png" alt="Logo" class="small-logo" />
-    <h1>Treino de Hoje - <span id="day"></span></h1>
+  <div class="dashboard">
+    <img src="logo.png" alt="Logo Goulart Personal" class="logo-small" />
+    <h2>Seja bem-vindo, Caio!</h2>
+    <p class="subheading">Treino de hoje - Segunda</p>
+
+    <div class="card treino-dia">
+      <h3>Peito e ombro</h3>
+      <ul>
+        <li>Supino reto</li>
+        <li>Dumbbell Press inclinado 30°</li>
+        <li>Crossover alto (ou sup.decl.)</li>
+        <li>Crucifixo máquina</li>
+        <li>Elevação lateral</li>
+        <li>Desenvolvimento com halteres</li>
+      </ul>
+    </div>
+
+    <div class="card observacoes">
+      <p><strong>Observações:</strong> 3 séries de 8 a 12 repetições com 1 minuto de descanso entre cada série.</p>
+    </div>
+
+    <a href="semana.html" class="btn">Ver todos os treinos da semana</a>
   </div>
-  <div class="card" id="todayWorkout">
-    <h2>Peito e tríceps</h2>
-    <p>Supino reto - 4x10<br>Crucifixo - 3x12<br>Tríceps pulley - 4x10</p>
-  </div>
-  <a href="semana.html" class="button">Ver todos os treinos da semana</a>
-  <script>
-    const days = ["Domingo", "Segunda", "Terça", "Quarta", "Quinta", "Sexta", "Sábado"];
-    document.getElementById("day").textContent = days[new Date().getDay()];
-  </script>
 </body>
 </html>
