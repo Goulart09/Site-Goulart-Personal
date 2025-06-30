@@ -1,1 +1,25 @@
-<!-- Dashboard do aluno com treino de hoje e botão para treinos da semana -->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Painel do Aluno</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="header">
+    <img src="logo.png" alt="Logo" class="small-logo" />
+    <h1>Treino de Hoje - <span id="day"></span></h1>
+  </div>
+  <div class="card" id="todayWorkout">
+    <h2>Peito e tríceps</h2>
+    <p>Supino reto - 4x10<br>Crucifixo - 3x12<br>Tríceps pulley - 4x10</p>
+  </div>
+  <a href="semana.html" class="button">Ver todos os treinos da semana</a>
+  <script>
+    const days = ["Domingo", "Segunda", "Terça", "Quarta", "Quinta", "Sexta", "Sábado"];
+    document.getElementById("day").textContent = days[new Date().getDay()];
+  </script>
+</body>
+</html>
