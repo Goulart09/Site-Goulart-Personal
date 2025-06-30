@@ -1,5 +1,1 @@
-
-document.getElementById("loginForm").addEventListener("submit", function(e) {
-    e.preventDefault();
-    alert("Login funcional será implementado.");
-});
+// Lógica JS para login, navegação e Firebase
