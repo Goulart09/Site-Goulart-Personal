@@ -1,21 +1,44 @@
+
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Treinos da Semana</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treinos da Semana</title>
+    <style>
+        body {
+            background-color: #1560bd;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: white;
+            padding: 20px;
+        }
+        .card {
+            background-color: #b2dafa;
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        .btn {
+            background-color: #a5eea0;
+            color: black;
+            padding: 8px 12px;
+            text-decoration: none;
+            border-radius: 8px;
+            display: inline-block;
+            margin-top: 10px;
+        }
+    </style>
 </head>
 <body>
-  <div class="semana">
     <h2>Treinos da Semana</h2>
-    <div class="dias">
-      <a class="card dia" href="segunda.html">Segunda<br><button>Ver treino</button></a>
-      <a class="card dia" href="terca.html">Terça<br><button>Ver treino</button></a>
-      <a class="card dia" href="quarta.html">Quarta<br><button>Ver treino</button></a>
-      <a class="card dia" href="quinta.html">Quinta<br><button>Ver treino</button></a>
-      <a class="card dia" href="sexta.html">Sexta<br><button>Ver treino</button></a>
-    </div>
-  </div>
+    <div class="card"><strong>Segunda</strong><br>Peito e ombro<br><a href="segunda.html" class="btn">Ver treino</a></div>
+    <div class="card"><strong>Terça</strong><br>Bíceps e tríceps<br><a href="terca.html" class="btn">Ver treino</a></div>
+    <div class="card"><strong>Quarta</strong><br>Perna e costas<br><a href="quarta.html" class="btn">Ver treino</a></div>
+    <div class="card"><strong>Quinta</strong><br>Descanso</div>
+    <div class="card"><strong>Sexta</strong><br>Fullbody<br><a href="sexta.html" class="btn">Ver treino</a></div>
+    <div class="card"><strong>Sábado</strong><br>Perna e costas<br><a href="sabado.html" class="btn">Ver treino</a></div>
+    <div class="card"><strong>Domingo</strong><br>Descanso</div>
 </body>
 </html>
